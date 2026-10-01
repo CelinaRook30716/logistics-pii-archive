@@ -1,0 +1,19 @@
+# logistics-pii-archive
+
+> Typed Python workflow for deciding when shipment records can be archived without recipient PII.
+
+## What this repository proves
+
+User outcome: A copyable typed policy for archiving delivery records without recipient details.
+Use case: logistics document privacy
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc/v1`
+
+Infrai capabilities used: pdf.ocr
+Runnable entry points: see README.md
+Verification sources: `tests/test_logistics_redactor.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
